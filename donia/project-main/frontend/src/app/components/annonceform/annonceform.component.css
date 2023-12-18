@@ -1,0 +1,48 @@
+
+
+  .btn{
+    
+    width: 150px;
+    height: 40px;
+    font-size: large;
+  }
+  .mat-stepper-horizontal {
+    margin-top: 8px;
+  }
+  
+  .mat-mdc-form-field {
+    margin-top: 16px;
+  }
+  mat-form-field{
+    width: 40%;
+  }
+  .date {
+    margin: 15px;
+  }
+  .button:hover,
+.button:focus {
+  transform: translateY(-0.25em);
+}
+.button {
+  background: none;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 0.7em 2em;
+  background-color: #FCDC07;
+  border-radius: 15%;
+  border:2px solid #FCDC07;
+  font-size: 20px;
+  cursor: pointer;
+}
+.button {
+  transition: 0.25s;
+  &:hover,
+  &:focus {
+    color: #000000;
+    background-color: #ffffff;
+    box-shadow: 7px 7px 20px #FCDC07;
+    
+  }
+}
+  

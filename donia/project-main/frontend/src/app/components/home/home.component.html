@@ -1,0 +1,148 @@
+<app-nav></app-nav>
+<mat-card>
+  <mat-card-content>
+    <div class="container">
+      <div class="text">
+        <p class="slogan">Quick Fixes , Big Smiles</p>
+
+        <mat-tab-group>
+          <mat-tab label="Hire a pro">
+            <mat-form-field>
+              <input matInput placeholder="Search" />
+              <mat-icon matSuffix>search</mat-icon>
+            </mat-form-field>
+            <mat-form-field class="loc">
+              <input matInput placeholder="Localisation" />
+              <mat-icon matSuffix>location_on</mat-icon>
+            </mat-form-field>
+            <button class="homebutton">Find services</button>
+          </mat-tab>
+          <mat-tab label="Find Customers">
+            <p class="txt">Sign up to start growing your business</p>
+            <button class="homebutton" routerLink="/formannonce">
+              Post an ad
+            </button>
+          </mat-tab>
+        </mat-tab-group>
+      </div>
+      <img
+        ngSrc="assets/images/home bg.jpg"
+        class="homebg"
+        width="650"
+        height="600"
+      />
+    </div>
+    <mat-grid-list cols="3" rowHeight="200px">
+      <mat-grid-tile>
+        <mat-card class="card">
+          <mat-card-content>
+            <div class="card-content">
+              <div class="icon-container">
+                <mat-icon>access_alarm</mat-icon>
+              </div>
+              <div class="card-info">
+                <mat-card-header>
+                  <mat-card-title>Reactivity</mat-card-title>
+                </mat-card-header>
+                <mat-card-content>
+                  <p>One less answer 24 hours</p>
+                </mat-card-content>
+              </div>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <mat-card class="card">
+          <mat-card-content>
+            <div class="card-content">
+              <div class="icon-container">
+                <mat-icon>people</mat-icon>
+              </div>
+              <div class="card-info">
+                <mat-card-header>
+                  <mat-card-title>3,000 Customers</mat-card-title>
+                </mat-card-header>
+                <mat-card-content>
+                  <p>More than +3,000 satisfied customers throughout Tunisia</p>
+                </mat-card-content>
+              </div>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <mat-card class="card">
+          <mat-card-content>
+            <div class="card-content">
+              <div class="icon-container">
+                <mat-icon>access_alarm</mat-icon>
+              </div>
+              <div class="card-info">
+                <mat-card-header>
+                  <mat-card-title>+500 services </mat-card-title>
+                </mat-card-header>
+                <mat-card-content>
+                  <p>Services delivered to our customers with ease</p>
+                </mat-card-content>
+              </div>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </mat-grid-tile>
+    </mat-grid-list>
+    <p class="title">Discover our services</p>
+    <div class="category-grid">
+      <div class="category-item" *ngFor="let category of categories">
+        <h3>{{ category.title }}</h3>
+        <img [src]="category.img" alt="{{ category.title }}" />
+      </div>
+    </div>
+    <div class="about-us">
+      <h2>Who <span class="weR">we are</span></h2>
+      <div class="content">
+        <img
+          src="assets/images/abtus.png"
+          alt="Company Logo"
+          class="left-image"
+        />
+        <p class="left-text">
+          <span class="chouflihal">Choufli Hal</span>, developed by second-year engineering students at TekUp
+          in Tunisia, is a versatile multiservice platform that connects local
+          service providers with individuals and businesses in need. Our
+          platform is designed to simplify access to high-quality local
+          services, ranging from cleaning and gardening to beauty and
+          well-being, as well as healthcare and various handyman services.
+          Choufli Hal aims to facilitate connections between service providers
+          and customers in Tunisia through an online platform, providing an
+          opportunity for service providers to expand their reach and grow their
+          businesses. Emphasizing job creation and empowerment of local service
+          providers, Choufli Hal is committed to fostering economic
+          opportunities. Whether you're seeking additional income through job
+          opportunities or require assistance with small tasks, Choufli Hal is
+          the go-to platform. If you're a service provider looking for job
+          opportunities, our platform streamlines your search by sending job
+          alerts directly to your email, notifying you of relevant opportunities
+          based on your skills and location. Similar to the models of Frizbiz in
+          France, Choufli Hal prioritizes transparency by showcasing providers'
+          profiles, including skills, experience, and community ratings. The
+          platform ensures trust through a comprehensive jobbing insurance
+          coverage. So, whether you're a customer looking for services or a
+          service provider seeking opportunities, Choufli Hal is here to
+          simplify your life and connect you with the right solutions.
+        </p>
+      </div>
+    </div>
+    <p class="title">Customers reviews</p>
+    <div class="review-container">
+      <div class="review-card" *ngFor="let review of reviews">
+         <img class="review-photo" [src]="review.photoUrl" alt="Customer Photo">
+         <div class="review-info">
+           <h3 class="review-name">{{review.name}}</h3>
+           <p class="review-text">{{review.text}}</p>
+         </div>
+      </div>
+     </div>
+  </mat-card-content>
+</mat-card>
+<app-footer></app-footer>

@@ -1,0 +1,35 @@
+<app-unauthnav></app-unauthnav>
+<div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+    <mat-card class="box">
+      <mat-card-header>
+        <mat-card-title>Register</mat-card-title>
+      </mat-card-header>
+      <form class="example-form">
+        <mat-card-content>
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="Nom">
+            <mat-icon matPrefix>account_box</mat-icon>
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="Prenom">
+            <mat-icon matPrefix>account_box</mat-icon>
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+            <input matInput type="email" placeholder="E-mail">
+            <mat-icon matPrefix>email</mat-icon>
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+            <input matInput type = "password" placeholder="Mot de passe" [type] = "hide ? 'password': 'text'">
+            <mat-icon matPrefix>lock</mat-icon>
+            <i class="material-icons" matSuffix (click) = "hide = !hide">{{hide ? 'visibility': 'visibility_off'}}</i>
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="Phone">
+            <mat-icon matPrefix>phone</mat-icon>
+          </mat-form-field>
+         
+        </mat-card-content>
+        <button>Register</button>
+      </form>
+    </mat-card>
+  </div>

@@ -1,0 +1,57 @@
+mat-icon {
+  margin-right: 10px;
+  margin-left: 7px;
+}
+mat-toolbar {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  border-bottom: 1px solid rgba(110, 109, 109, 0.295);
+
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  list-style: none;
+}
+
+mat-toolbar .profile_details {
+  display: flex;
+  flex-direction: row;
+  margin-top: 8px;
+}
+
+.logo img {
+  max-height: 70px; 
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.profile_details mat-icon {
+  font-size: 35px;
+  margin-right: 15px;
+  color: rgb(0, 0, 0);
+}
+
+.notif mat-icon {
+  font-size: 25px;
+  color: rgb(0, 0, 0);
+  margin-top: 11px;
+}
+
+.menu-icon mat-icon {
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  margin-top: 20px;
+  margin-left: 15px;
+}
+.toast-center-center {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

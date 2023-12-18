@@ -1,0 +1,21 @@
+
+  .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card {
+    
+    margin: 10px; 
+    width: 300px; 
+    text-align: center;
+    font-style: bold;
+    font-size: larger;
+  }
+  .Mission{
+    font-size:xx-large;
+    font-style: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #FCDC07;
+  }

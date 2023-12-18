@@ -1,0 +1,41 @@
+html,
+body {
+  height: 100%;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background: #e2e2e2;
+}
+.image{
+    margin-left: 700px;
+    margin-bottom: 10px;
+}
+
+.box {
+  position: relative;
+  margin-top: -25%;
+  margin-left: 5%;
+  padding: 50px 50px 50px 50px;
+  background: rgb(254, 254, 255);
+  border-radius: 10px;
+  width:40%;
+  height:40%;
+}
+
+
+ .example-full-width,
+ .btn-block {
+  width: 100%;
+  color: rgb(17, 17, 201);
+}
+
+.login-wrapper mat-card-header mat-card-title {
+  font-size: 25px;
+  margin: 0;
+}
+
+.mat-stroked-button {
+  border: 1px solid;
+  line-height: 54px;
+  background: #FFF7FA;
+  margin-top: 20px;
+}
+

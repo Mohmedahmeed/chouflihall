@@ -1,0 +1,26 @@
+<app-nav></app-nav>
+<mat-card>
+    <mat-card-content>
+        <div class="card-container">
+            <mat-card class="card">
+              <mat-card-content>
+                <span class="Mission">2</span><br>
+                <span>Mes annonces</span>
+
+                </mat-card-content>
+            </mat-card>
+          </div>
+          <!-- app.component.html -->
+          <div class="card-grid">
+            <div *ngFor="let card of cards; index as i" (click)="toggleDescription(i)">
+               <div class="card">
+                 <h2>{{ card.title }}</h2>
+                 <p>{{ card.date }}</p>
+                 <p>{{ card.description.slice(0, 200) + (showDescription[i] ? '...' : '') }}</p>
+                 <button>{{ showDescription[i] ? 'See less' : 'See more' }}</button>
+               </div>
+            </div>
+           </div>
+        
+    </mat-card-content>
+</mat-card>

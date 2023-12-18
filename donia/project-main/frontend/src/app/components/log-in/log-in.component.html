@@ -1,0 +1,25 @@
+<app-unauthnav></app-unauthnav>
+<div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+    <div class="bg">
+      <mat-card class="box">
+        <mat-card-header>
+          <mat-card-title>Log in</mat-card-title>
+        </mat-card-header>
+        <form class="example-form">
+          <mat-card-content>
+            <mat-form-field class="example-full-width">
+              <input matInput type="email" placeholder="E-mail">
+              <mat-icon matPrefix>email</mat-icon>
+            </mat-form-field>
+            <mat-form-field class="example-full-width">
+              <input matInput type="password" placeholder="Mot de passe" [type]="hide ? 'password': 'text'">
+              <mat-icon matPrefix>lock</mat-icon>
+              <i class="material-icons" matSuffix (click)="hide = !hide">{{hide ? 'visibility': 'visibility_off'}}</i>
+            </mat-form-field>
+            <a routerLink="/forget">mot de passe oublié?</a>
+          </mat-card-content>
+          <button routerLink="/home">Log in</button>
+        </form>
+      </mat-card>
+    </div>
+  </div>

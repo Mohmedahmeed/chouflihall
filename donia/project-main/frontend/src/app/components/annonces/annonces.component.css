@@ -1,0 +1,103 @@
+mat-icon {
+    margin-right: 10px;
+    margin-left: 7px;
+  }
+  mat-toolbar {
+    background-color: rgb(191, 195, 224);
+    width: 100%;
+  }
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+  
+  ul {
+    display: flex;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  mat-toolbar .profile_details {
+    display: flex;
+    flex-direction: row;
+    margin-top: 8px;
+  }
+ 
+  .logo img {
+    max-height: 70px; 
+  }
+  
+  .profile_details mat-icon {
+    font-size: 35px;
+    margin-right: 15px;
+    color: rgb(0, 0, 0);
+  }
+  
+  .notif mat-icon {
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    margin-top: 11px;
+  }
+  
+  .menu-icon mat-icon {
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+    margin-left: 15px;
+  }
+  .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card {
+    
+    margin: 10px; 
+    width: 300px; 
+    text-align: center;
+    font-style: bold;
+    font-size: larger;
+  }
+  .Mission{
+    font-size:xx-large;
+    font-style: bold;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#FCDC07;
+  }
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+   }
+   
+   .card {
+    background-color: #f0f0f0;
+    padding: 1rem;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   }
+   
+   button {
+    background: none;
+    font: inherit;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 0.7em 2em;
+    background-color: #FCDC07;
+    
+    border:2px solid #FCDC07;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  button {
+    transition: 0.25s;
+    &:hover,
+    &:focus {
+      color: #000000;
+      background-color: #ffffff;
+      box-shadow: 7px 7px 20px #FCDC07;
+      
+    }
+  }

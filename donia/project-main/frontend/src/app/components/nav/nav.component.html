@@ -1,0 +1,62 @@
+<mat-toolbar>
+    <!-- Your existing toolbar content -->
+    <span>
+        <mat-toolbar-row class="d-flex">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="assets/images/logo choufli hal.png" alt="Logo" routerLink="/home" />
+            </div>
+            <span class="example-spacer"></span>
+            <div class="row">
+                <ul class="icon-navbar">
+                    <li>
+                        <button mat-button [matMenuTriggerFor]="menu">
+                            <div class="notif" matBadge="1" matBadgeColor="accent">
+                                <mat-icon>notifications_active</mat-icon>
+                            </div>
+                        </button>
+                        <mat-menu #menu="matMenu">
+                            <!--listes des notifications-->
+                            <mat-list>
+                                <mat-list-item>vous avez une notification</mat-list-item>
+                            </mat-list>
+                        </mat-menu>
+                    </li>
+                    <mat-divider [vertical]="true"></mat-divider>
+                    <li>
+                        <button mat-button [matMenuTriggerFor]="menu1">
+                            <div class="profile_details">
+                                <mat-icon>perm_identity</mat-icon>
+                                <div class="class_type">
+                                    <span>nom d'utilisateur</span>
+                                </div>
+                            </div>
+                        </button>
+                        <mat-menu #menu1="matMenu" class="btn-account">
+                            <button mat-menu-item>
+                                <a mat-list-item routerLinkActive="list-item-active" routerLink="/profil">
+                                    <mat-icon>edit</mat-icon>Modifier mon profil
+                                </a>
+                            </button>
+                            <button mat-menu-item>
+                                <a mat-list-item routerLinkActive="list-item-active" routerLink="/missions">
+                                    <mat-icon>subject</mat-icon>Mes missions
+                                </a>
+                            </button>
+                            <button mat-menu-item>
+                                <a mat-list-item routerLinkActive="list-item-active" routerLink="/annonce">
+                                    <mat-icon>add_comment</mat-icon>Mes annonces
+                                </a>
+                            </button>
+                            
+                            <button mat-menu-item>
+                                <mat-icon>exit_to_app</mat-icon>
+                                Déconnexion
+                            </button>
+                        </mat-menu>
+                    </li>
+                </ul>
+            </div>
+        </mat-toolbar-row>
+    </span>
+</mat-toolbar>
